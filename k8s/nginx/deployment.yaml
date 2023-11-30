@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: redheaven/my-nginx-image:${TAG}
+        image: redheaven/my-nginx-image:20231130032857
         ports:
         - containerPort: 80
