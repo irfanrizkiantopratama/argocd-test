@@ -17,12 +17,3 @@ spec:
         image: redheaven/my-nginx-image:20231130032857
         ports:
         - containerPort: 80
-        volumeMounts:
-        - name: nginx-conf
-          mountPath: /etc/nginx/nginx.conf
-          subPath: nginx.conf
-      volumes:
-      - name: nginx-conf
-        configMap:
-          name: nginx-conf
----
