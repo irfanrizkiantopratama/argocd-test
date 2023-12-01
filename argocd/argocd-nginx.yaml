@@ -3,6 +3,7 @@ kind: Application
 metadata:
   annotations:
     argocd-image-updater.argoproj.io/image-list: redheaven/my-nginx-image
+    argocd-image-updater.argoproj.io/write-back-method: git
   name: argocd-nginx
   namespace: argocd
 spec:
