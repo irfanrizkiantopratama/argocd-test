@@ -2,8 +2,11 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   annotations:
-    argocd-image-updater.argoproj.io/image-list: redheaven/my-nginx-image
-    argocd-image-updater.argoproj.io/write-back-method: git
+    argocd-image-updater.argoproj.io/image-list: 'testing=docker.io/redheaven/my-nginx-image:latest'
+    argocd-image-updater.argoproj.io/testing.update-strategy: 'digest' #There are several ways to update the image, but I'm using digest
+    argocd-image-updater.argoproj.io/git-branch: 'main'
+    argocd-image-updater.argoproj.io/testing.force-update: 'true'
+    argocd-image-updater.argoproj.io/write-back-method: 'git:secret:argocd-image-updater/git-creds'
   name: argocd-nginx
   namespace: argocd
 spec:
