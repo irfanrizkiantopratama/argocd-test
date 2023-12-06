@@ -15,5 +15,6 @@ spec:
       containers:
       - name: nginx
         image: docker.io/redheaven/my-nginx-image:demo
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
