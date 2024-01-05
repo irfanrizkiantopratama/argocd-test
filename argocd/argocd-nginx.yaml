@@ -12,7 +12,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/irfanrizkiantopratama/argocd-app.git
+    repoURL: https://github.com/irfanrp/argocd-app.git
     targetRevision: HEAD
     path: k8s/nginx
   sources: []
