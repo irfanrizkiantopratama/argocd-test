@@ -1,3 +1,3 @@
 kustomize:
   images:
-  - docker.io/redheaven/my-nginx-image@sha256:62b87ea1f004dd905c96ea16a9145b541de0f980a10022928a7aa24b0ba5a946
+  - docker.io/redheaven/my-nginx-image@sha256:b2f93b3f851023daf22601501d8b63e3276a721f6bff18c823d5c3e8a55a4d6b
