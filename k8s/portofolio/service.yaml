@@ -7,5 +7,5 @@ spec:
     app: portofolio  # Label yang sesuai dengan label pada pod yang ingin dijadikan target Service
   ports:
     - protocol: TCP
-      port: 80
+      port: 443
       targetPort: 3000  # Anggaplah aplikasi React berjalan pada port 3000
