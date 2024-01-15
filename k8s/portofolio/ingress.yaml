@@ -4,7 +4,7 @@ metadata:
   name: portofolio-ingress  # Nama Ingress
 spec:
   rules:
-  - host: aboutdevops.my.id  # Nama host yang akan di-associate dengan Ingress
+  - host: kube.aboutdevops.my.id  # Nama host yang akan di-associate dengan Ingress
     http:
       paths:
       - path: /
