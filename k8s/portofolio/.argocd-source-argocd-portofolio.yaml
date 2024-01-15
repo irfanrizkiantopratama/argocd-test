@@ -1,3 +1,3 @@
 kustomize:
   images:
-  - docker.io/redheaven/react@sha256:f7f086fe431d950a100a82a4c623b57454d48eb5c9094d105c38a4fb9565af7d
+  - docker.io/redheaven/react@sha256:b15e8db775cf3911f307cc38b8ab9869733921b4265ae45138711bf5d552b8aa
