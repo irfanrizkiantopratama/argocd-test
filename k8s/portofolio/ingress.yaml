@@ -13,4 +13,4 @@ spec:
           service:
             name: portofolio-service  # Nama Service yang ingin di-forward
             port:
-              number: 80  # Port Service yang ingin di-forward
+              number: 3000  # Port Service yang ingin di-forward
