@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portofolio-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: portofolio
+  template:
+    metadata:
+      labels:
+        app: portofolio
+    spec:
+      containers:
+      - name: portofolio
+        image: docker.io/redheaven/react:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80

@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: portofolio-ingress  # Nama Ingress
+spec:
+  rules:
+  - host: aboutdevops.my.id  # Nama host yang akan di-associate dengan Ingress
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: portofolio-service  # Nama Service yang ingin di-forward
+            port:
+              number: 80  # Port Service yang ingin di-forward

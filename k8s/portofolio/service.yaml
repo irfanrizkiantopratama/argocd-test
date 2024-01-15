@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: portofolio-service  # Nama Service
+spec:
+  selector:
+    app: portofolio  # Label yang sesuai dengan label pada pod yang ingin dijadikan target Service
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000  # Assuming your react running on port 3000
+      nodePort: 32000  # Tipe service dapat disesuaikan dengan kebutuhan, seperti ClusterIP atau NodePort
