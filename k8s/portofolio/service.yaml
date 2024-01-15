@@ -8,5 +8,4 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 3000  # Assuming your react running on port 3000
-      nodePort: 32000  # Tipe service dapat disesuaikan dengan kebutuhan, seperti ClusterIP atau NodePort
+      targetPort: 3000  # Anggaplah aplikasi React berjalan pada port 3000
